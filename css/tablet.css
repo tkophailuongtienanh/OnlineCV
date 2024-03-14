@@ -1,0 +1,28 @@
+@media screen and (max-width: 991px) {
+  /* Style cho phần thông tin  */
+  #about .container > div {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  /* Style cho phần chứng nhận và giải thưởng */
+  #certificate .container ul li {
+    flex-direction: column;
+    padding: 1rem 1rem 0 0px;
+    line-height: 1.5;
+  }
+  #certificate .container ul li img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /* Style các padding của các thành phần trong list */
+  .project-title,
+  .project-info {
+    padding: 0.5rem;
+  }
+  /* Style cho phần ảnh của Dự án */
+  #project .container ul li img {
+    height: 150px;
+  }
+}

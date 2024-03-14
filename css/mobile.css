@@ -1,0 +1,57 @@
+@media screen and (max-width: 767px) {
+  .container a {
+    border: 0 !important;
+  }
+  /* Style cho phần thông tin  */
+  #about .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  /* Style cho phần chứng nhận và giải thưởng */
+  #certificate .container ul {
+    grid-template-columns: 1fr;
+  }
+  #certificate .container ul li {
+    position: relative;
+    flex-direction: column;
+    padding-right: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      left: 0;
+      bottom: 0px;
+      width: 100%;
+      background-color: #d6c08d;
+    }
+  }
+  #certificate .container ul li:nth-child(even) {
+    position: relative;
+    padding-left: 0;
+    &::before {
+      content: "";
+      background: none;
+    }
+  }
+  #certificate .container ul li:nth-child(even):not(:last-child) {
+    &::after {
+      content: "";
+      height: 1px;
+      left: 0;
+      bottom: 0px;
+      width: 100%;
+      background-color: #d6c08d;
+    }
+  }
+  /* Style cho phần layout của Dự án */
+  #project .container ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    align-items: start;
+  }
+}
